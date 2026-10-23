@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    height:100vh;
+    overflow:hidden;
+
+    background:linear-gradient(#150008,#500020);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+/* Frase fixa no centro */
+
+h1{
+
+    position:absolute;
+
+    color:white;
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:90px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+
+    text-shadow:
+    0 0 10px red,
+    0 0 20px pink,
+    0 0 40px red;
+
+}
+
+
+/* Corações */
+
+.heart{
+
+    position:absolute;
+
+    bottom:-50px;
+
+    color:red;
+
+    font-size:35px;
+
+    text-shadow:
+    0 0 10px red,
+    0 0 20px pink,
+    0 0 40px red;
+
+
+    animation:flutuar linear infinite;
+
+}
+
+
+
+@keyframes flutuar{
+
+    0%{
+
+        transform:translateY(0) rotate(0deg);
+
+        opacity:1;
+
+    }
+
+
+    100%{
+
+        transform:translateY(-110vh) rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
